@@ -43,6 +43,8 @@ jobs:
     steps:
       - name: Push image
         run: |
+          pwd
+          ls
           cd packages/${{ inputs.package_path }}
           pwd
           ls
