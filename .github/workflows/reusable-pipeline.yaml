@@ -8,6 +8,8 @@ on:
         type: string
       tag:
         type: string
+      package_path:
+        type: string
     secrets:
       registry_username:
         required: true
