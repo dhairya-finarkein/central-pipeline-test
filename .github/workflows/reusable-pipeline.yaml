@@ -40,4 +40,8 @@ jobs:
     needs: [build]
     steps:
       - name: Push image
-        run: echo "Pushing docker image to registry"
+        run: |
+          cd packages/${{ inputs.package_path }}
+          pwd
+          ls
+          echo "Publishing package to Jfrog"
